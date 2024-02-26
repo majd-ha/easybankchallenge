@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navlinks > div {
+  cursor: pointer;
+  padding-top: 15px;
+  flex: 1 1 0%;
+  text-align: center;
+  text-transform: capitalize;
+  height: 100%;
+  border: 4px transparent solid;
+  border-left: 0;
+  border-right: 0;
+
+  border-top: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+.navlinks > div:hover {
+  border-image: linear-gradient(to right, #4ade80, #60a5fa) 1 0%;
+  color: black;
+}
+
+.socials > svg,
+.footerlinks {
+  cursor: pointer;
+}
